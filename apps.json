@@ -1,0 +1,17 @@
+{
+  "name": "Nudge",
+  "identifier": "com.nudgeapp.ios.altstore-source",
+  "sourceURL": "https://raw.githubusercontent.com/om0019/nudge-ios/main/apps.json",
+  "apps": [
+    {
+      "name": "Nudge",
+      "bundleIdentifier": "com.nudgeapp.ios",
+      "developerName": "Nudge",
+      "subtitle": "A calm, customizable planner for ADHD brains",
+      "localizedDescription": "Nudge is a free, ADHD-friendly planner with a visual timeline, gentle reminders, a focus timer, and Home Screen widgets — with an accent color and layout you control.",
+      "iconURL": "https://raw.githubusercontent.com/om0019/nudge-ios/main/Nudge/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+      "tintColor": "FF6A1D",
+      "versions": []
+    }
+  ]
+}
