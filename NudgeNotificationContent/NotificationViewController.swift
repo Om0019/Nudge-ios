@@ -20,9 +20,9 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
         let title = info["title"] as? String ?? notification.request.content.title
         let symbolName = info["symbolName"] as? String ?? "bell.fill"
         let colorHex = info["colorHex"] as? String ?? ThemeStore.defaultColorHex
-        let body = notification.request.content.body
+        let bodyText = notification.request.content.body
 
-        let card = NotificationCardView(title: title, body: body, symbolName: symbolName, colorHex: colorHex)
+        let card = NotificationCardView(title: title, bodyText: bodyText, symbolName: symbolName, colorHex: colorHex)
 
         if let hostingController {
             hostingController.rootView = card
@@ -45,7 +45,7 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
 
 private struct NotificationCardView: View {
     let title: String
-    let body: String
+    let bodyText: String
     let symbolName: String
     let colorHex: String
 
@@ -60,7 +60,7 @@ private struct NotificationCardView: View {
             VStack(alignment: .leading, spacing: 3) {
                 Text(title)
                     .font(.system(size: 15, weight: .semibold, design: .rounded))
-                Text(body)
+                Text(bodyText)
                     .font(.system(size: 13, design: .rounded))
                     .foregroundStyle(.secondary)
                     .lineLimit(2)
